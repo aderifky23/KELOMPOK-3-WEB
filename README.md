@@ -8,6 +8,6 @@ Tema : Les Bimbel
 3. Sambungkan repository github ini dengan VS Code masing", tutorial ada di YouTube.
 4. Bisa Edit juga di VS Code untuk codingan, dll.
 
-<!----------------NOTE----------------->
+<!----------------CATATAN----------------->
 
 dadekne file HTML ro CSS diluar assets, nek enek file JavaScript(.js) bisa nggawe folder dewe terus nehke ng assets
