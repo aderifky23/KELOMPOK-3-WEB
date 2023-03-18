@@ -1,0 +1,110 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(183, 222, 255);
+}
+.form-box{
+    padding: 10px;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 4px solid rgba(255, 166, 0, 0.751);
+    border-radius: 15px;
+    background: rgba(255, 166, 0, 0.751);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -7px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    top: 17px;
+    color: white;
+    font-size: 1.2rem;
+}
+.forget{
+    margin: -10px 0 10px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background: rgba(183, 223, 255, 0.694);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a{
+    color: white;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+.registrasi{
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.registrasi p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.registrasi p a:hover{
+    text-decoration: underline;
+}

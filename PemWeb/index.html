@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semar Course</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WebStyle.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="help">Helpdesk</a></li>
+            </ul>
+            <a href="login.html" class="action_btn" target="_blank">Login</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu open">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="help">Helpdesk</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <!-------------------LOGO----------------------->
+    <img src="assets/img/semar.svg" alt="logo">
+    <!-------------------MENU----------------------->
+
+    <div class="menu"> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <h3>Selamat datang di semar course</h3><br>
+        <p>Semar Course telah berdiri sejak Februari 2023. Kami unggul dalam kursus dari <br> SD sampai SMA,
+             dengan les kursus yang kami tawarkan dapat membantu anak <br> anda belajar memahami materi dengan mudah, karena kami menawarkan banyak fitur.</p>
+    </div>
+
+    <!-------------------CONTENT-------------------->
+
+    <div class="container">
+        <p class="tengah">Isikan formulir pendaftar course</p>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td> : <input type="text" name="nama"/></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir </td>
+                    <td> : 
+                        <input type="date" />
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Jenjang</td>
+                    <td>: <input type="radio" name="kelamin" size="10" value="sd" checked/>SD
+                           <input type="radio" name="kelamin" size="10" value="smp"/>SMP
+                           <input type="radio" name="kelamin" size="10" value="sma"/>SMA
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat </td>
+                    <td>: <textarea name="alamat" size="10" value="ngalamat">tuliskan alamat anda</textarea></td>
+                </tr>
+                
+                <tr>
+                    <td>Kecamatan (Surakarta)</td>
+                    <td>: <select name="kota" id="">
+                        <option selected value="pwr">Jebres</option>
+                        <option value="bnj">Banjarsari</option>
+                        <option value="lwy">Laweyan</option>
+                        <option value="klw">Pasar Kliwon</option>
+                        <option value="srg">Serengan</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nomor Telepon</td>
+                    <td> : <input type="text" name="tlp"/></td>
+                </tr>
+                <tr>
+                    <td>Upload Foto</td>
+                    <td>: <input type="file" name="fotos"></td>
+                </tr> 
+                    <td>Deskripsi Paket </td>
+                    <td>: <a href="PemWeb2.html" target="_blank">klik disini</a></td>
+                <tr>
+                    <td rowspan="3">Pilih Paket</td>
+                    <td>:<input type="checkbox" name="hobi" size="10" value="makan"/>Reguler</td>
+                </tr>
+                <tr>
+                    <td>:<input type="checkbox" name="hobi" size="10" value="jalan"/>Ujian(UTS/UAS)</td>
+                </tr>
+                <tr>
+                <td>:<input type="checkbox" name="hobi" size="10" value="jafdfn"/>UTBK</td>
+                </tr>
+                <tr>   
+                    <td></td>                        
+                    <td>
+                        <input type="submit" name="input" value="INPUT" target="PemWeb2.html"/>
+                        <input type="reset" name="clear" value="CLEAR"/>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <br>
+    </div>
+
+<!--------------------------------FOOTER------------------------------->
+    <div class="footer">
+        <p>copyright 2023</p>
+    </div>
+</body>
+</html>
